@@ -1,11 +1,14 @@
 /* eslint-disable no-console */
-import { config } from 'dotenv';
+import 'reflect-metadata';
 
+import { config } from 'dotenv';
 import express, { Request, Response, NextFunction } from 'express';
 import 'express-async-errors';
 
 import AppError from '@shared/errors/AppError';
 import routes from './routes';
+
+import '@shared/infra/typeorm';
 
 config();
 
