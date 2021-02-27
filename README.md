@@ -7,7 +7,7 @@
 - [ ] Create new tool
 - [ ] Delete a tool
 - [x] Create User
-- [ ] Authenticate user
+- [x] Authenticate user
 
 ### Non-functional requirements
 
