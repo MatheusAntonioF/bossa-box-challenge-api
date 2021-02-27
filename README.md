@@ -6,6 +6,7 @@
 - [ ] Filter tools by tag
 - [ ] Create new tool
 - [ ] Delete a tool
+- [x] Create User
 - [ ] Authenticate user
 
 ### Non-functional requirements
