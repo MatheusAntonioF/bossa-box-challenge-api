@@ -12,6 +12,12 @@ class ToolsRepository implements IToolsRepository {
     this.ormRepository = getRepository(Tool);
   }
 
+  async findAll(): Promise<Tool[]> {
+    const findedTools = await this.ormRepository.find();
+
+    return findedTools;
+  }
+
   async findByTitle(title: string): Promise<Tool | null> {
     const findedTool = await this.ormRepository.findOne({
       where: { title },
