@@ -5,7 +5,8 @@ const toolsRouter = Router();
 
 const toolsController = new ToolsController();
 
-toolsRouter.post('/', toolsController.create);
 toolsRouter.get('/', toolsController.list);
+toolsRouter.get('/:tag', toolsController.show);
+toolsRouter.post('/', toolsController.create);
 
 export default toolsRouter;

@@ -10,6 +10,8 @@
   "entities": ["./src/modules/**/infra/typeorm/entities/*.ts"],
   "migrations": ["./src/shared/infra/typeorm/migrations/*.ts"],
 
+  "logging": true,
+
   "cli": {
     "migrationsDir": "./src/shared/infra/typeorm/migrations",
     "entitiesDir": "./src/modules/**/infra/typeorm/entities"

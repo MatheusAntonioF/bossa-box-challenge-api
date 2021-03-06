@@ -21,7 +21,7 @@ class Tool {
   @Column()
   link: string;
 
-  @ManyToMany(() => Tag, { cascade: true })
+  @ManyToMany(() => Tag, tag => tag.tool, { cascade: true, eager: true })
   @JoinTable({
     name: 'tool_tags',
     joinColumn: { name: 'tool_id', referencedColumnName: 'id' },

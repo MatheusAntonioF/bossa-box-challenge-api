@@ -6,7 +6,6 @@
 - [ ] Filter tools by tag
 - [x] Create new tool
 - [ ] Delete a tool
-- [ ] Create seed to add tags
 - [x] Create User
 - [x] Authenticate user
 
