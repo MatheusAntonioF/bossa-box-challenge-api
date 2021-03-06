@@ -59,6 +59,12 @@ class ToolsRepository implements IToolsRepository {
 
     return tool;
   }
+
+  async deleteById(id: string): Promise<boolean> {
+    await this.ormRepository.delete({ id });
+
+    return true;
+  }
 }
 
 export default ToolsRepository;

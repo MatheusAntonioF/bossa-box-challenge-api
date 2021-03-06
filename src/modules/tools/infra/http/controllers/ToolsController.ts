@@ -4,6 +4,7 @@ import { container } from 'tsyringe';
 import CreateToolService from '@modules/tools/services/CreateToolService';
 import ListAllToolsService from '@modules/tools/services/ListAllToolsService';
 import GetToolByTagService from '@modules/tools/services/GetToolByTagService';
+import DeleteToolService from '@modules/tools/services/DeleteToolService';
 
 class ToolsController {
   async list(_: Request, response: Response): Promise<Response> {
@@ -30,6 +31,14 @@ class ToolsController {
       .execute({ title, link, description, tags });
 
     return response.json(createdTool);
+  }
+
+  async delete(request: Request, response: Response): Promise<Response> {
+    const { id } = request.params;
+
+    await container.resolve(DeleteToolService).execute(id);
+
+    return response.sendStatus(204);
   }
 }
 

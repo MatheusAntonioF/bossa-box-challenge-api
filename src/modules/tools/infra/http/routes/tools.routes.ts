@@ -8,5 +8,6 @@ const toolsController = new ToolsController();
 toolsRouter.get('/', toolsController.list);
 toolsRouter.get('/:tag', toolsController.show);
 toolsRouter.post('/', toolsController.create);
+toolsRouter.delete('/:id', toolsController.delete);
 
 export default toolsRouter;

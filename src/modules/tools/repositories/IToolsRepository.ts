@@ -8,4 +8,5 @@ export default interface IToolsRepository {
   findByTagId(tagId: string): Promise<Tool[]>;
   create(data: ICreateTool): Promise<Tool>;
   save(tool: Tool): Promise<Tool>;
+  deleteById(id: string): Promise<boolean>;
 }
