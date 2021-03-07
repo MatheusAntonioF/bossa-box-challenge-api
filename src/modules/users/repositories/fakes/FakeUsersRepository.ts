@@ -15,7 +15,7 @@ class FakeUsersRepository implements IUsersRepository {
   async create(userData: User): Promise<User> {
     const newUser = new User();
 
-    Object.assign(newUser, { id: uuid }, userData);
+    Object.assign(newUser, { id: uuid() }, userData);
 
     this.users.push(newUser);
 

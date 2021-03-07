@@ -9,6 +9,12 @@
 - [x] Create User
 - [x] Authenticate user
 
+#### Tests Progress
+
+- [x] Resource of users
+- [x] Resource of authenticate
+- [] Resource of tools
+
 ### Non-functional requirements
 
 - [x] Using jwt to authenticate user
