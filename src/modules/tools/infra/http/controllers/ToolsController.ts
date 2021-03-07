@@ -30,7 +30,7 @@ class ToolsController {
       .resolve(CreateToolService)
       .execute({ title, link, description, tags });
 
-    return response.json(createdTool);
+    return response.sendStatus(201).json(createdTool);
   }
 
   async delete(request: Request, response: Response): Promise<Response> {
