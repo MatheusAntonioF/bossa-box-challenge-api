@@ -13,7 +13,7 @@
 
 - [x] Resource of users
 - [x] Resource of authenticate
-- [] Resource of tools
+- [ ] Resource of tools
 
 ### Non-functional requirements
 
